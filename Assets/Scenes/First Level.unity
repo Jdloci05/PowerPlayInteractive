@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9177,7 +9177,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 619640901}
         m_TargetAssemblyTypeName: SoundEffect, Assembly-CSharp
-        m_MethodName: MalHecho
+        m_MethodName: RaiseMalHechoEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9288,10 +9288,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonidoSnapZone: {fileID: 954648636}
-  SonidoBueno: {fileID: 8300000, guid: fb85f277e43f1e74d8bd26fef1ea21ba, type: 3}
-  SonidoMalo: {fileID: 8300000, guid: ba419daf4e283904d905f63578a74193, type: 3}
-  VolumenSonidoBueno: 1
-  VolumenSonidoMalo: 1
+  SonidoBueno: {fileID: 8300000, guid: 255381fd2714caa49936e662f4f21642, type: 3}
+  SonidoMalo: {fileID: 8300000, guid: 7c7ffbbe16e1f554a86f2a426d50cd1b, type: 3}
+  VolumenSonidoBueno: 0.25
+  VolumenSonidoMalo: 0.25
 --- !u!1001 &628999784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15361,7 +15361,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1194532363}
         m_TargetAssemblyTypeName: SoundEffect, Assembly-CSharp
-        m_MethodName: MalHecho
+        m_MethodName: RaiseMalHechoEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15472,10 +15472,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonidoSnapZone: {fileID: 954648636}
-  SonidoBueno: {fileID: 8300000, guid: fb85f277e43f1e74d8bd26fef1ea21ba, type: 3}
-  SonidoMalo: {fileID: 8300000, guid: ba419daf4e283904d905f63578a74193, type: 3}
-  VolumenSonidoBueno: 1
-  VolumenSonidoMalo: 1
+  SonidoBueno: {fileID: 8300000, guid: 255381fd2714caa49936e662f4f21642, type: 3}
+  SonidoMalo: {fileID: 8300000, guid: 7c7ffbbe16e1f554a86f2a426d50cd1b, type: 3}
+  VolumenSonidoBueno: 0.25
+  VolumenSonidoMalo: 0.25
 --- !u!1001 &1197033927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24149,7 +24149,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1485603462}
         m_TargetAssemblyTypeName: SoundEffect, Assembly-CSharp
-        m_MethodName: BienHecho
+        m_MethodName: RaiseBienHechoEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24272,10 +24272,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonidoSnapZone: {fileID: 954648636}
-  SonidoBueno: {fileID: 8300000, guid: fb85f277e43f1e74d8bd26fef1ea21ba, type: 3}
-  SonidoMalo: {fileID: 8300000, guid: ba419daf4e283904d905f63578a74193, type: 3}
-  VolumenSonidoBueno: 1
-  VolumenSonidoMalo: 1
+  SonidoBueno: {fileID: 8300000, guid: 255381fd2714caa49936e662f4f21642, type: 3}
+  SonidoMalo: {fileID: 8300000, guid: 7c7ffbbe16e1f554a86f2a426d50cd1b, type: 3}
+  VolumenSonidoBueno: 0.25
+  VolumenSonidoMalo: 0.25
 --- !u!1001 &1487135726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26569,10 +26569,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonidoSnapZone: {fileID: 954648636}
-  SonidoBueno: {fileID: 8300000, guid: fb85f277e43f1e74d8bd26fef1ea21ba, type: 3}
-  SonidoMalo: {fileID: 8300000, guid: ba419daf4e283904d905f63578a74193, type: 3}
-  VolumenSonidoBueno: 1
-  VolumenSonidoMalo: 1
+  SonidoBueno: {fileID: 8300000, guid: 255381fd2714caa49936e662f4f21642, type: 3}
+  SonidoMalo: {fileID: 8300000, guid: 7c7ffbbe16e1f554a86f2a426d50cd1b, type: 3}
+  VolumenSonidoBueno: 0.25
+  VolumenSonidoMalo: 0.25
 --- !u!1001 &1613058628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27963,7 +27963,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1706343486}
         m_TargetAssemblyTypeName: SoundEffect, Assembly-CSharp
-        m_MethodName: MalHecho
+        m_MethodName: RaiseMalHechoEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28074,10 +28074,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonidoSnapZone: {fileID: 954648636}
-  SonidoBueno: {fileID: 8300000, guid: fb85f277e43f1e74d8bd26fef1ea21ba, type: 3}
-  SonidoMalo: {fileID: 8300000, guid: ba419daf4e283904d905f63578a74193, type: 3}
-  VolumenSonidoBueno: 1
-  VolumenSonidoMalo: 1
+  SonidoBueno: {fileID: 8300000, guid: 255381fd2714caa49936e662f4f21642, type: 3}
+  SonidoMalo: {fileID: 8300000, guid: 7c7ffbbe16e1f554a86f2a426d50cd1b, type: 3}
+  VolumenSonidoBueno: 0.25
+  VolumenSonidoMalo: 0.25
 --- !u!1001 &1708163365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29281,7 +29281,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1754903819}
         m_TargetAssemblyTypeName: SoundEffect, Assembly-CSharp
-        m_MethodName: BienHecho
+        m_MethodName: RaiseBienHechoEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29404,10 +29404,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonidoSnapZone: {fileID: 954648636}
-  SonidoBueno: {fileID: 8300000, guid: fb85f277e43f1e74d8bd26fef1ea21ba, type: 3}
-  SonidoMalo: {fileID: 8300000, guid: ba419daf4e283904d905f63578a74193, type: 3}
-  VolumenSonidoBueno: 1
-  VolumenSonidoMalo: 1
+  SonidoBueno: {fileID: 8300000, guid: 255381fd2714caa49936e662f4f21642, type: 3}
+  SonidoMalo: {fileID: 8300000, guid: 7c7ffbbe16e1f554a86f2a426d50cd1b, type: 3}
+  VolumenSonidoBueno: 0.25
+  VolumenSonidoMalo: 0.25
 --- !u!1001 &1778188396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31187,7 +31187,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1881196027}
         m_TargetAssemblyTypeName: SoundEffect, Assembly-CSharp
-        m_MethodName: BienHecho
+        m_MethodName: RaiseBienHechoEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31310,10 +31310,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonidoSnapZone: {fileID: 954648636}
-  SonidoBueno: {fileID: 8300000, guid: fb85f277e43f1e74d8bd26fef1ea21ba, type: 3}
-  SonidoMalo: {fileID: 8300000, guid: ba419daf4e283904d905f63578a74193, type: 3}
-  VolumenSonidoBueno: 1
-  VolumenSonidoMalo: 1
+  SonidoBueno: {fileID: 8300000, guid: 255381fd2714caa49936e662f4f21642, type: 3}
+  SonidoMalo: {fileID: 8300000, guid: 7c7ffbbe16e1f554a86f2a426d50cd1b, type: 3}
+  VolumenSonidoBueno: 0.25
+  VolumenSonidoMalo: 0.25
 --- !u!1001 &1881366191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33501,6 +33501,7 @@ GameObject:
   - component: {fileID: 1993866322}
   - component: {fileID: 1993866321}
   - component: {fileID: 1993866325}
+  - component: {fileID: 1993866326}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -33635,9 +33636,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0ec1a0f29ce6e5c42bace32a3aa3f375, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a73f822c28092a44684a54ce3a9b4f7f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.12
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -33721,6 +33722,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1993866326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993866319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f33042b57214ca4bb46d1213c4c1c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeInterval: 45
+  soundToPlay: {fileID: 8300000, guid: d1d3993d4f991a84188c3ba2e59ca806, type: 3}
+  OnSoundPlay:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1996098551
 PrefabInstance:
   m_ObjectHideFlags: 0

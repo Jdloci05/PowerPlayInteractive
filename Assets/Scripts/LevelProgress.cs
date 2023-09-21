@@ -9,23 +9,20 @@ public class LevelProgress : MonoBehaviour
     public int puntos;
     public Slider slider;
 
-
-    public ProgressBar progressBar;
-
     public GameObject mision;
-    // Start is called before the first frame update
 
     public void Enter()
     {
-        slider.value += puntos;
+        // Use the public methods to raise the events
+        ProgressBar.RaiseSetProgressEvent((int)slider.value + puntos);
         mision.SetActive(true);
     }
 
     public void Exit()
     {
-        slider.value -= puntos;
+        // Use the public methods to raise the events
+        ProgressBar.RaiseSetProgressEvent((int)slider.value - puntos);
         mision.SetActive(false);
     }
-
 
 }
