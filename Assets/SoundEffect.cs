@@ -16,6 +16,9 @@ public class SoundEffect : MonoBehaviour
     public static event Action OnBienHecho;
     public static event Action OnMalHecho;
 
+    public GameObject AdviceCanvas;
+    private int wrongCount = 0;
+
     private void OnEnable()
     {
         OnBienHecho += PlayBienHechoSound;
@@ -31,11 +34,31 @@ public class SoundEffect : MonoBehaviour
     private void PlayBienHechoSound()
     {
         SonidoSnapZone.PlayOneShot(SonidoBueno, VolumenSonidoBueno);
+        wrongCount = 0;
     }
 
     private void PlayMalHechoSound()
     {
         SonidoSnapZone.PlayOneShot(SonidoMalo, VolumenSonidoMalo);
+        wrongCount++; 
+
+        if (wrongCount == 3)
+        {
+            DisplayAdvice();
+            wrongCount = 0; 
+        }
+    }
+
+    private void DisplayAdvice()
+    {
+        AdviceCanvas.SetActive(true);
+        StartCoroutine(DeactivateAdvice());
+    }
+
+    private IEnumerator DeactivateAdvice()
+    {
+        yield return new WaitForSeconds(10);
+        AdviceCanvas.SetActive(false); 
     }
 
     public void RaiseBienHechoEvent()
