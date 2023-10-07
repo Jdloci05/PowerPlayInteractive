@@ -20,4 +20,9 @@ public class Sonido : MonoBehaviour
     {
         fuente.Play ();
     }
+
+    public void Parar()
+    {
+        fuente.Stop();
+    }
 }
