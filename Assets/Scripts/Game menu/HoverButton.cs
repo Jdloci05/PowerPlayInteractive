@@ -11,6 +11,7 @@ public class HoverButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public Vector3 defaultScale = Vector3.one;
     public Vector3 hoverScale = new Vector3(1.1f, 1.1f, 1.1f);
     public float animationSpeed = 0.2f;
+    public UIBounce uiBounce;
 
     private XRBaseInteractor hoverInteractor;
     private bool isHovering = false;
@@ -44,6 +45,11 @@ public class HoverButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             isHovering = true;
             StopAllCoroutines();
             StartCoroutine(AnimateScale(hoverScale));
+
+            if (uiBounce != null)
+            {
+                uiBounce.StartBouncing();
+            }
         }
     }
 
@@ -54,6 +60,12 @@ public class HoverButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             isHovering = false;
             StopAllCoroutines();
             StartCoroutine(AnimateScale(defaultScale));
+
+            if(uiBounce != null)
+            {
+                uiBounce.StopBouncing();
+            }
+            
         }
     }
 
