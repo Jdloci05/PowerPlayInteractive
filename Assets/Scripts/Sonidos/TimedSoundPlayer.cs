@@ -12,16 +12,19 @@ public class TimedSoundPlayer : MonoBehaviour
     [Header("Events")]
     public UnityEvent OnSoundPlay;
 
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     private float timer;
 
     private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
             Debug.LogError("No AudioSource component found!");
             return;
+        }
+        else
+        {
+
         }
 
         if (soundToPlay != null)
