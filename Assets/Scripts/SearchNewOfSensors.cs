@@ -11,8 +11,6 @@ public class SearchNewOfSensors : MonoBehaviour
     public TextMeshProUGUI paragraphText;
     public Image mainImage;
 
-    public Sprite[] defaultImage;
-
     public string[] urlSites;
 
     int siteToVisit;
@@ -25,7 +23,7 @@ public class SearchNewOfSensors : MonoBehaviour
 
     IEnumerator FetchDataFromWebsite()   
     {
-        siteToVisit = Random.Range(0, urlSites.Length);
+        
         UnityWebRequest request = UnityWebRequest.Get(urlSites[siteToVisit]);
         yield return request.SendWebRequest();
 
@@ -38,13 +36,10 @@ public class SearchNewOfSensors : MonoBehaviour
             string htmlContent = request.downloadHandler.text;
 
             string titlePattern = @"<title>(.*?)<\/title>";
-            
             Match titleMatch = Regex.Match(htmlContent, titlePattern);
             if(titleMatch.Success)
             {
                 titleText.text = titleMatch.Groups[1].Value;
-                string stringWithoutHtmlTags = Regex.Replace(titleText.text, "<.*?>|[#&$&@]|[\r\n]", string.Empty);
-                titleText.text = stringWithoutHtmlTags;
             }
             // Suponiendo que el párrafo principal está contenido en las primeras etiquetas <p></p>
             string paragraphPattern = @"<p.*?>(.*?)<\/p>";
@@ -52,52 +47,28 @@ public class SearchNewOfSensors : MonoBehaviour
 
             
             string firstParagraph = paragraphMatches[0].Groups[1].Value;
-            string Pwithout1 = Regex.Replace(firstParagraph, "<.*?>|[#&$&@]|[\r\n]", string.Empty);
-            
             string secondParagraph = paragraphMatches[1].Groups[1].Value;
-            string Pwithout2 = Regex.Replace(secondParagraph, "<.*?>|[#&$&@]|[\r\n]", string.Empty);
-
             string thirdParagraph = paragraphMatches[2].Groups[1].Value;
-            string Pwithout3 = Regex.Replace(thirdParagraph, "<.*?>|[#&$&@]|[\r\n]", string.Empty);
-
             string fourthParagraph = paragraphMatches[3].Groups[1].Value;
-            string Pwithout4 = Regex.Replace(fourthParagraph, "<.*?>|[#&$&@]|[\r\n]", string.Empty);
-
-            paragraphText.text = Pwithout1 + "\n" + "\n" + Pwithout2 + "\n" + "\n" + Pwithout3 + "\n" + "\n" + Pwithout4;
-
-            if(paragraphText.text.Length > 630)
-            {
-                paragraphText.text = paragraphText.text.Substring(0, 630);
-                paragraphText.text += " (Ver más en el link)";
-            }
-
-            
-            bool imgTagExists = Regex.IsMatch(htmlContent, "<img");
-
-            if (imgTagExists)
-            {
-                // Suponiendo que la imagen principal tiene una etiqueta <img> (esto obtendría la primera imagen)
-                string imgPattern = @"<img.*?src=['""](.*?)['""]";
-                // Comprueba si existe una etiqueta <img>
-                Match imgMatch = Regex.Match(htmlContent, imgPattern);
-                if (imgMatch.Success)
-                {
-                    string imgUrl = imgMatch.Groups[1].Value;
-
-                    // Si la URL de la imagen es relativa, añadir el dominio principal
-                    if (!imgUrl.StartsWith("http"))
-                    {
-                        string domain = new System.Uri(urlSites[siteToVisit]).GetLeftPart(System.UriPartial.Authority);
-                        imgUrl = domain + imgUrl;
-                    }
-
-                    StartCoroutine(DownloadImage(imgUrl));
-                }
-            } else
-            {
-                mainImage.sprite = (defaultImage[Random.Range(0,defaultImage.Length)]);
-            }
+            paragraphText.text = firstParagraph + "; " + "\n" +secondParagraph + "; " + "\n" + thirdParagraph + "; " + "\n" + fourthParagraph;
                 
+   
+            // Suponiendo que la imagen principal tiene una etiqueta <img> (esto obtendría la primera imagen)
+            string imgPattern = @"<img.*?src=['""](.*?)['""]";
+            Match imgMatch = Regex.Match(htmlContent, imgPattern);
+            if (imgMatch.Success)
+            {
+                string imgUrl = imgMatch.Groups[1].Value;
+
+                // Si la URL de la imagen es relativa, añadir el dominio principal
+                if (!imgUrl.StartsWith("http"))
+                {
+                    string domain = new System.Uri(urlSites[siteToVisit]).GetLeftPart(System.UriPartial.Authority);
+                    imgUrl = domain + imgUrl;
+                }
+
+                StartCoroutine(DownloadImage(imgUrl));
+            }
         }
     }
 
@@ -119,7 +90,6 @@ public class SearchNewOfSensors : MonoBehaviour
 
     public void OpenWebPage()
     {
-        if(Application.platform != RuntimePlatform.WindowsPlayer || Application.platform != RuntimePlatform.OSXPlayer || Application.platform != RuntimePlatform.LinuxPlayer)
         Application.OpenURL(urlSites[siteToVisit]);
     }
 
