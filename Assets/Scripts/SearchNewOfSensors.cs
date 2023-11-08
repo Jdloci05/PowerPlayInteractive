@@ -11,6 +11,8 @@ public class SearchNewOfSensors : MonoBehaviour
     public TextMeshProUGUI paragraphText;
     public Image mainImage;
 
+    public Sprite[] defaultImage;
+
     public string[] urlSites;
 
     int siteToVisit;
@@ -63,6 +65,11 @@ public class SearchNewOfSensors : MonoBehaviour
 
             paragraphText.text = Pwithout1 + "\n" + "\n" + Pwithout2 + "\n" + "\n" + Pwithout3 + "\n" + "\n" + Pwithout4;
 
+            if(paragraphText.text.Length > 630)
+            {
+                paragraphText.text = paragraphText.text.Substring(0, 630);
+                paragraphText.text += " (Ver más en el link)";
+            }
 
             
             bool imgTagExists = Regex.IsMatch(htmlContent, "<img");
@@ -86,6 +93,9 @@ public class SearchNewOfSensors : MonoBehaviour
 
                     StartCoroutine(DownloadImage(imgUrl));
                 }
+            } else
+            {
+                mainImage.sprite = (defaultImage[Random.Range(0,defaultImage.Length)]);
             }
                 
         }
