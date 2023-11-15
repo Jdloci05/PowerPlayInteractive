@@ -16,7 +16,8 @@ public class RGBController : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Left Hand") || other.CompareTag("Right Hand")) 
+        if ((other.CompareTag("Left Hand") || other.CompareTag("Right Hand")) && 
+            (slider.value == 90)) 
         {
             CambiarColor();
             mision.SetActive(true);
