@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -697,7 +697,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d1587fb7269e944480b673a3efdf3d5, type: 2}
+  - {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1337,7 +1337,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d1587fb7269e944480b673a3efdf3d5, type: 2}
+  - {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2464,7 +2464,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2660,20 +2660,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 382518639}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &382518642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382518641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d032668f0b09416478e53175c88a1878, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone1: {fileID: 688343545}
-  snapZone2: {fileID: 368975308}
 --- !u!114 &382518643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2740,7 +2726,7 @@ MonoBehaviour:
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 382518642}
+      - m_Target: {fileID: 382518647}
         m_TargetAssemblyTypeName: ActiveSnapZone, Assembly-CSharp
         m_MethodName: SelectObject
         m_Mode: 1
@@ -2755,7 +2741,7 @@ MonoBehaviour:
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 382518642}
+      - m_Target: {fileID: 382518647}
         m_TargetAssemblyTypeName: ActiveSnapZone, Assembly-CSharp
         m_MethodName: ExitSelectObject
         m_Mode: 1
@@ -4259,7 +4245,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5348,7 +5334,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d1587fb7269e944480b673a3efdf3d5, type: 2}
+  - {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6989,7 +6975,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d1587fb7269e944480b673a3efdf3d5, type: 2}
+  - {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8486,7 +8472,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 256
+    m_Bits: 4096
   m_AttachTransform: {fileID: 1866411279}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -8598,7 +8584,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10079,7 +10065,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d1587fb7269e944480b673a3efdf3d5, type: 2}
+  - {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10365,7 +10351,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 256
+    m_Bits: 4096
   m_AttachTransform: {fileID: 1842231572}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -10501,7 +10487,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12427,7 +12413,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d1587fb7269e944480b673a3efdf3d5, type: 2}
+  - {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32706,6 +32692,11 @@ PrefabInstance:
       propertyPath: AdviceCanvas
       value: 
       objectReference: {fileID: 1182330929}
+    - target: {fileID: 1563289648368045830, guid: f94c1604b1d6fcd42af48303eca65008,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
     - target: {fileID: 1563289648368045944, guid: f94c1604b1d6fcd42af48303eca65008,
         type: 3}
       propertyPath: m_IsActive
@@ -32726,6 +32717,11 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 1277108027}
+    - target: {fileID: 1563289648807776343, guid: f94c1604b1d6fcd42af48303eca65008,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
     - target: {fileID: 1563289649247584832, guid: f94c1604b1d6fcd42af48303eca65008,
         type: 3}
       propertyPath: haptic
@@ -32751,11 +32747,21 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 1277108027}
+    - target: {fileID: 1563289649247584844, guid: f94c1604b1d6fcd42af48303eca65008,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
     - target: {fileID: 1563289649247584846, guid: f94c1604b1d6fcd42af48303eca65008,
         type: 3}
       propertyPath: AdviceCanvas
       value: 
       objectReference: {fileID: 1182330929}
+    - target: {fileID: 1563289649464445817, guid: f94c1604b1d6fcd42af48303eca65008,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
     - target: {fileID: 1563289649464445819, guid: f94c1604b1d6fcd42af48303eca65008,
         type: 3}
       propertyPath: AdviceCanvas
@@ -32801,6 +32807,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1563289649656099516, guid: f94c1604b1d6fcd42af48303eca65008,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
     - target: {fileID: 1563289649656099518, guid: f94c1604b1d6fcd42af48303eca65008,
         type: 3}
       propertyPath: AdviceCanvas
@@ -32811,6 +32822,11 @@ PrefabInstance:
       propertyPath: haptic
       value: 
       objectReference: {fileID: 2016176212}
+    - target: {fileID: 1563289650042775884, guid: f94c1604b1d6fcd42af48303eca65008,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
     - target: {fileID: 1563289650042775886, guid: f94c1604b1d6fcd42af48303eca65008,
         type: 3}
       propertyPath: AdviceCanvas
@@ -32821,6 +32837,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.00125
       objectReference: {fileID: 0}
+    - target: {fileID: 1563289650052183489, guid: f94c1604b1d6fcd42af48303eca65008,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
     - target: {fileID: 1563289650052183491, guid: f94c1604b1d6fcd42af48303eca65008,
         type: 3}
       propertyPath: AdviceCanvas
@@ -32936,6 +32957,11 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 1277108027}
+    - target: {fileID: 1563289650171093918, guid: f94c1604b1d6fcd42af48303eca65008,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 476844c954c2e25438fdd5e87792dafe, type: 2}
     - target: {fileID: 1563289650171093919, guid: f94c1604b1d6fcd42af48303eca65008,
         type: 3}
       propertyPath: m_Size.x
