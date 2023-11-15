@@ -5,14 +5,15 @@ using UnityEngine;
 public class ObjectMover : MonoBehaviour
 {
     public GameObject[] objectsToMove; // Array de objetos en la escena que se moverán
-    public Transform newPosition; // Transform del objeto a cuya posición queremos mover otro objeto
+    public Transform[] newPosition; // Transform del objeto a cuya posición queremos mover otro objeto
 
     // Método para mover un objeto a una nueva posición
     public void MoveObject(int index)
     {
         if (index >= 0 && index < objectsToMove.Length)
         {
-            objectsToMove[index].transform.position = newPosition.position;
+            objectsToMove[index].transform.position = newPosition[index].position;
+            objectsToMove[index].transform.rotation = newPosition[index].rotation;
         }
         else
         {
