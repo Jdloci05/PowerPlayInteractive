@@ -25,6 +25,8 @@ MonoBehaviour:
   - CLPulsador
   - CCPulsador
   - HandUIRay
+  - LedRGB
+  - CCVoltiosRGB
   - 
   - 
   - 
@@ -43,8 +45,3 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - Teleport

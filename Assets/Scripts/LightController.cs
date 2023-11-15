@@ -26,7 +26,5 @@ public class LightController : MonoBehaviour
             mision.SetActive(true);
             lightLED.SetActive(false);
         }
-            
-
     }
 }
