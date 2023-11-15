@@ -11,10 +11,9 @@ public class ActiveLight : MonoBehaviour
     public GameObject light;
     public GameObject progress;
     public GameObject Final;
-    public GameObject Text1;
-    public GameObject Text2;
-    public GameObject Text3;
+    public GameObject[] Apagar;
     public Slider slider;
+    public GameObject MenuFinal;
 
 
     public void Update()
@@ -23,18 +22,21 @@ public class ActiveLight : MonoBehaviour
         {
             light.SetActive(true);
             Final.SetActive(true);
-            Text1.SetActive(false);
-            Text2.SetActive(false);
-            Text3.SetActive(false);
+            foreach(GameObject apa in Apagar)
+            {
+                apa.SetActive(false);
+            }
             SonidoSnapZone.PlayOneShot(Sonidovictoria, 0.5f);
+            Invoke("FinalCanvas", 3f);
         }
         if (slider.value < 100)
         {
             light.SetActive(false);
             Final.SetActive(false);
-            Text1.SetActive(true);
-            Text2.SetActive(true);
-            Text3.SetActive(true);
+            foreach (GameObject apa in Apagar)
+            {
+                apa.SetActive(true);
+            }
             progress.SetActive(true);
         }
     }
@@ -51,5 +53,10 @@ public class ActiveLight : MonoBehaviour
             Final.SetActive(false);
             progress.SetActive(true);
         }
+    }
+
+    public void FinalCanvas()
+    {
+        MenuFinal.SetActive(true);
     }
 }
