@@ -20,7 +20,8 @@ public class LightController : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Left Hand") || other.CompareTag("Right Hand"))
+        if ((other.CompareTag("Left Hand") || other.CompareTag("Right Hand")) &&
+            (slider.value == 90))
         {
             ProgressBar.RaiseSetProgressEvent((int)slider.value + puntos);
             mision.SetActive(true);
