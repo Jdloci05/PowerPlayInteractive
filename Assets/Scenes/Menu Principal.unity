@@ -8130,7 +8130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &222891587
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14149,7 +14149,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284692383}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -1.526}
+  m_LocalPosition: {x: 0, y: 0, z: -1.78}
   m_LocalScale: {x: 0.0005, y: 0.0005, z: 0.0005}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -14159,7 +14159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -3.601, y: 0.275}
+  m_AnchoredPosition: {x: -3.601, y: 0.541}
   m_SizeDelta: {x: 1070, y: 530}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284692386
@@ -21511,7 +21511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.000061, y: 291.99994}
+  m_AnchoredPosition: {x: -1.000061, y: 241}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &424382115
@@ -28833,7 +28833,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 845827946}
+      - m_Target: {fileID: 675430957}
         m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
         m_MethodName: CambiarEscena
         m_Mode: 1
@@ -29349,6 +29349,7 @@ GameObject:
   - component: {fileID: 675430956}
   - component: {fileID: 675430955}
   - component: {fileID: 675430954}
+  - component: {fileID: 675430957}
   m_Layer: 7
   m_Name: GameObject (3)
   m_TagString: Untagged
@@ -29532,6 +29533,19 @@ MonoBehaviour:
   hoverScale: {x: 1.1, y: 1.1, z: 1.1}
   animationSpeed: 0.2
   uiBounce: {fileID: 1093812082}
+--- !u!114 &675430957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675430952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcc2f76fc91fce2428fc6ee0c7ae37bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 3
 --- !u!1 &678542370
 GameObject:
   m_ObjectHideFlags: 0
@@ -40274,7 +40288,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -245.99992, y: 189.20006}
+  m_AnchoredPosition: {x: -245.99992, y: 138.20006}
   m_SizeDelta: {x: 111.5, y: 137.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &787347084
@@ -40935,7 +40949,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 845827945}
-  - component: {fileID: 845827946}
   m_Layer: 0
   m_Name: Curved Canvas
   m_TagString: Untagged
@@ -40966,19 +40979,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &845827946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845827944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcc2f76fc91fce2428fc6ee0c7ae37bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: 1
 --- !u!1 &850427480
 GameObject:
   m_ObjectHideFlags: 0
@@ -54439,7 +54439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 87, y: 374.00012}
+  m_AnchoredPosition: {x: 87, y: 323.00012}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1450889150
@@ -55070,7 +55070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80, y: 467}
+  m_AnchoredPosition: {x: 80, y: 453}
   m_SizeDelta: {x: 626.2, y: 165.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1472847333
@@ -56645,6 +56645,7 @@ GameObject:
   - component: {fileID: 1519612895}
   - component: {fileID: 1519612894}
   - component: {fileID: 1519612893}
+  - component: {fileID: 1519612896}
   m_Layer: 7
   m_Name: GameObject (3)
   m_TagString: Untagged
@@ -56828,6 +56829,19 @@ MonoBehaviour:
   hoverScale: {x: 1.1, y: 1.1, z: 1.1}
   animationSpeed: 0.2
   uiBounce: {fileID: 1757197429}
+--- !u!114 &1519612896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519612891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcc2f76fc91fce2428fc6ee0c7ae37bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 2
 --- !u!1 &1521525251
 GameObject:
   m_ObjectHideFlags: 0
@@ -56924,7 +56938,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 845827946}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
         m_MethodName: CambiarEscena
         m_Mode: 1
@@ -78196,7 +78210,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 845827946}
+      - m_Target: {fileID: 1519612896}
         m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
         m_MethodName: CambiarEscena
         m_Mode: 1
