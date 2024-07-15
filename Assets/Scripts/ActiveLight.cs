@@ -8,7 +8,7 @@ public class ActiveLight : MonoBehaviour
     public AudioSource SonidoSnapZone;
     public AudioClip Sonidovictoria;
 
-    public GameObject light;
+    public GameObject lightPoint;
     public GameObject progress;
     public GameObject Final;
     public GameObject[] Apagar;
@@ -20,7 +20,7 @@ public class ActiveLight : MonoBehaviour
     {
         if (slider.value == 100 && !Final.activeSelf)
         {
-            light.SetActive(true);
+            lightPoint.SetActive(true);
             Final.SetActive(true);
             foreach(GameObject apa in Apagar)
             {
@@ -31,7 +31,7 @@ public class ActiveLight : MonoBehaviour
         }
         if (slider.value < 100)
         {
-            light.SetActive(false);
+            lightPoint.SetActive(false);
             Final.SetActive(false);
             foreach (GameObject apa in Apagar)
             {
@@ -49,7 +49,7 @@ public class ActiveLight : MonoBehaviour
         }
         if (slider.value < 100)
         {
-            light.SetActive(false);
+            lightPoint.SetActive(false);
             Final.SetActive(false);
             progress.SetActive(true);
         }

@@ -6,9 +6,11 @@ using UnityEngine;
 public class SoundEffect : MonoBehaviour
 {
     public AudioSource SonidoSnapZone;
+    public AudioSource NPCAudioSource;
 
     public AudioClip SonidoBueno;
     public AudioClip SonidoMalo;
+    public AudioClip Sonido3Malo;
 
     public float VolumenSonidoBueno;
     public float VolumenSonidoMalo;
@@ -57,7 +59,9 @@ public class SoundEffect : MonoBehaviour
 
     private IEnumerator DeactivateAdvice()
     {
-        yield return new WaitForSeconds(10);
+        NPCAudioSource.clip = Sonido3Malo;
+        NPCAudioSource.Play();
+        yield return new WaitForSeconds(Sonido3Malo.length);
         AdviceCanvas.SetActive(false); 
     }
 
